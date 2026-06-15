@@ -1,0 +1,109 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width:900px;
+    margin:0 auto;
+    padding:30px;
+}
+
+/* TÍTULO */
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:50px;
+    letter-spacing:3px;
+    color:#333;
+}
+
+.instrucao{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+/* CADA ATIVIDADE */
+.atividade{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    margin-bottom:90px;
+}
+
+/* IMAGENS */
+.atividade img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+}
+
+/* ESCONDE O TEXTO ENCONTRE */
+.atividade h3{
+    display:none;
+}
+
+/* GRADE DAS LETRAS */
+.grade{
+    display:grid;
+    grid-template-columns:repeat(11, 40px);
+    gap:6px;
+}
+
+/* LETRAS */
+.letra{
+    width:35px;
+    height:35px;
+    border:none;
+    background:transparent;
+    font-size:28px;
+    font-weight:normal;
+    cursor:pointer;
+    text-transform:uppercase;
+    color:#222;
+}
+
+/* LETRA SELECIONADA */
+.letra.selecionada{
+    background:#ffe066;
+    border-radius:5px;
+}
+
+/* PALAVRA ENCONTRADA */
+.letra.correta{
+    background:#7CFC90;
+    border-radius:5px;
+}
+
+/* MENSAGENS */
+#msgRaposa,
+#msgBoca,
+#msgGato,
+#msgBanana{
+    margin-top:15px;
+    font-weight:bold;
+    color:green;
+}
+
+/* BOTÃO VOLTAR */
+.btn{
+    display:block;
+    width:300px;
+    margin:40px auto;
+    text-align:center;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#388E3C;
+}
