@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <header class="topo">
+        <img src="img/foto.jpeg" alt="Foto" class="foto">
+        <h1>Matheus Augusto Fernandes Queiroz</h1>
+        <p class="cargo">Estudante de Análise e Desenvolvimento de Sistemas</p>
+        <a href="caca-palavras.html" class="btn">🎮 Aplicação Educativa</a>
+    </header>
+
+    <main>
+        <section class="informacoes">
+            <div class="card">
+                <h2>🎓 Formação</h2>
+                <p>ADS - Em andamento</p>
+            </div>
+            <div class="card">
+                <h2>💻 Tecnologias</h2>
+                <p>HTML, CSS, JavaScript e Python</p>
+            </div>
+            <div class="card">
+                <h2>🚀 Objetivo</h2>
+                <p>Atuar com desenvolvimento de software</p>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <h2>Sobre Mim</h2>
+            <p>
+                Atualmente estou cursando o 1º Período do curso de Análise e Desenvolvimento de Sistemas no IFRO Campus Ariquemes, onde tenho adquirido conhecimentos em diversas linguagens de programação e tecnologias.
+                Meu objetivo é me tornar um desenvolvedor de software competente e contribuir para projetos inovadores.
+            </p>
+        </section>
+
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <div class="tecnologias">
+                <div class="tec"><p>HTML</p></div>
+                <div class="tec"><p>CSS</p></div>
+                <div class="tec"><p>JavaScript</p></div>
+                <div class="tec"><p>Python</p></div>
+                <div class="tec"><p>Java</p></div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <h2>Contato</h2>
+            <form>
+            
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Nome" required minlength="3">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Mensagem" required minlength="10"></textarea>
+
+                <label for="data">Data:</label>
+                <input type="date" id="data" required>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" placeholder="Idade" min="1" max="120" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="programacao">Programação</option>
+                    <option value="tecnologia">Tecnologia</option>
+                </select>
+
+                <div class="sexo">
+                    <p>Gênero:</p> 
+                    <label>
+                        <input type="radio" name="sexo" value="masculino" required> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="sexo" value="feminino"> Feminino
+                    </label>
+                </div>
+
+                <label>
+                    <input type="checkbox" required> Aceito os termos
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
